@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100%;
+}
+
+.header{ 
+    text-align: center;
+}
+
+/* subtitulos */
+
+.h2{
+    color: rgb(110, 96, 59);
+    text-align: center;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    text-decoration:solid;
+}
+
+.h2:hover{
+    transform: scale(1,2);
+}
+/* estilo de los parrafos */
+
+.parrafo{
+    color: rgb(110, 96, 59);
+    text-align: center;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    text-decoration:solid;
+}
