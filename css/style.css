@@ -6,6 +6,7 @@
 
 body{
     height: 100%;
+    background-image: url("../image/imagen1.jpg");
 }
 
 .header{ 
