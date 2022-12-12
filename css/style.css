@@ -9,7 +9,10 @@ body{
 }
 
 .header{ 
+    display: flex;
     text-align: center;
+    margin-left: 350px;
+    max-width: 1200px;
 }
 
 /* subtitulos */
@@ -32,3 +35,4 @@ body{
     font-family:Georgia, 'Times New Roman', Times, serif;
     text-decoration:solid;
 }
+
