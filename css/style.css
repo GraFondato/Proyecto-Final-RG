@@ -6,8 +6,14 @@
 
 body{
     height: 100%;
-    background-image: url("../image/imagen1.jpg");
 }
+
+.conteiner{ 
+    margin: 4rem auto;  
+    background-image:url("../image/imagenfondoo.jpg");
+    background-image:-o-linear-gradient(rgb(125, 133, 143));
+    background-repeat: no-repeat;
+    background-size: auto;}
 
 .header{ 
     display: flex;
@@ -19,6 +25,7 @@ body{
 /* subtitulos */
 
 .h2{
+    width: 700px;
     color: rgb(110, 96, 59);
     text-align: center;
     font-family:Georgia, 'Times New Roman', Times, serif;
@@ -31,9 +38,22 @@ body{
 /* estilo de los parrafos */
 
 .parrafo{
+    width: 700px;
+    display: inline-block;
+    vertical-align: top;
     color: rgb(110, 96, 59);
     text-align: center;
     font-family:Georgia, 'Times New Roman', Times, serif;
     text-decoration:solid;
 }
 
+.aside{
+    width: 300px;
+    display: inline-block;
+    text-align: center;
+    vertical-align: top;
+}
+
+.section1{
+    margin-top: 2px;
+}
