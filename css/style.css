@@ -2,18 +2,28 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    max-width: 1200px;
+
 }
 
 body{
     height: 100%;
 }
 
-.conteiner{ 
-    margin: 4rem auto;  
-    background-image:url("../image/imagenfondoo.jpg");
-    background-image:-o-linear-gradient(rgb(125, 133, 143));
+.conteiner{
+    max-width: 1200px;
+    display: grid; 
+    grid-column: 1;
+    grid-auto-flow: row;
+    grid-auto-rows: 1fr;
+    background-image:linear-gradient(rgba(219, 218, 218, 0.6), rgba(211, 210, 210, 0.6)), url("../image/fondoo.jpeg");
     background-repeat: no-repeat;
-    background-size: auto;}
+    background-size: 1200px 1500px;
+    grid-template-areas:
+    "parrafo aside"
+    "parrafo aside"
+    "footer footer";
+}
 
 .header{ 
     display: flex;
@@ -25,8 +35,10 @@ body{
 /* subtitulos */
 
 .h2{
+    margin: 2rem;
+    padding: 3rem 5rem 2rem 5rem;
     width: 700px;
-    color: rgb(110, 96, 59);
+    color:  rgb(101, 161, 136);
     text-align: center;
     font-family:Georgia, 'Times New Roman', Times, serif;
     text-decoration:solid;
@@ -38,22 +50,65 @@ body{
 /* estilo de los parrafos */
 
 .parrafo{
+    margin: auto;
+    padding: auto;
     width: 700px;
-    display: inline-block;
-    vertical-align: top;
-    color: rgb(110, 96, 59);
+    display: grid;
+    grid-column: 1;
+    grid-row: 1;
+    grid-area: parrafo;
+    line-height: 25px;
+    color:  rgb(101, 161, 136);
     text-align: center;
     font-family:Georgia, 'Times New Roman', Times, serif;
     text-decoration:solid;
+
 }
 
 .aside{
-    width: 300px;
-    display: inline-block;
+    max-width: 1200px;
+    margin: 5rem 1rem 8rem 1rem;
+    background-color: #65a188a1;
+    color: aliceblue;
+    font-weight: 200;
+    font-size: 100%;
+    border-radius: 8px;
+    box-shadow: 0 0 6px black;
+    width: 400px;
+    display: grid;
+    grid-column: 2;
+    grid-row: 1;
+    grid-area: aside;
     text-align: center;
-    vertical-align: top;
+    vertical-align: text-top;
 }
 
-.section1{
-    margin-top: 2px;
+.img-conteiner{
+    display: flex;
+    align-items: center;
+    margin: 2rem 2rem 2rem 11rem;
+    box-shadow: 0px 0px 10px 5px rgb(41, 90, 78);
 }
+
+#coporales{
+    margin: auto;
+}
+
+.footer{
+    text-align: center;
+    padding: 20px;
+    text-transform: uppercase;
+    font-size: 1em;
+    font-weight: 200; 
+    display: grid;
+    grid-area: footer;
+    justify-content: center;
+    color: rgb(101, 161, 136);
+}
+
+.main{
+    text-align: center;
+    border-radius: 8rem;
+    background-color: #65a188a1;
+}
+
